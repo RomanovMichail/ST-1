@@ -11,7 +11,6 @@ bool checkPrime(uint64_t value) {
   if (value % 2 == 0)
     return false;
 
-  // Проверяем нечетные делители до корня из числа
   uint64_t max_div = static_cast<uint64_t>(sqrt(value));
   for (uint64_t i = 3; i <= max_div; i += 2) {
     if (value % i == 0)
