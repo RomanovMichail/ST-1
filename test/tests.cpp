@@ -1,7 +1,9 @@
 // Copyright 2025 UNN-CS
 
 #include "alg.h"
+
 #include <cstdint>
+
 #include <gtest/gtest.h>
 
 TEST(PrimeValidation, SmallValues) {
