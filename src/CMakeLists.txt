@@ -1,11 +1,11 @@
-
+cmake_minimum_required (VERSION 3.16)
 include_directories(${${PROJECT_NAME}_SOURCE_DIR}/include)
 set(header ${${PROJECT_NAME}_SOURCE_DIR}/include)
 set(src ${${PROJECT_NAME}_SOURCE_DIR}/src/alg.cpp)
 
 message(PROJECT_SOURCE_DIR="${src}")
 
-add_library(${PROJECT_NAME} SHARED
+add_library(${PROJECT_NAME} STATIC
   ${header}
   ${src})
   
